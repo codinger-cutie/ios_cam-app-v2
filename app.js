@@ -35,12 +35,12 @@ function logger () {
 recBtn.addEventListener("click", () =>{
     recBtn.classList.toggle("active")
     hours = 0; minutes = 0; count = 0;
-    if (rec === 0) {
+    if (rec === 1) {
         recTime.innerText = "Nothing to see here...";
-        rec = 1;
+        rec = 0;
     } else {
         recTime.innerText = "recording..."+ count;
-        rec = 0;
+        rec = 1;
     }
 })
 
